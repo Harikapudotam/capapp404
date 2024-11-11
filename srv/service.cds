@@ -8,7 +8,7 @@ service MyService @(requires : 'authenticated-user'){
     entity Request_Header as projection on ust.RequestHeader;
 
     entity Request_Items as projection on ust.RequestItem;
-    entity materials as projection on ust.Material;
+    entity materials as projection on ust.Material; //exposing them 
 
 
 }
