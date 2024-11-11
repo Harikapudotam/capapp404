@@ -1,0 +1,16 @@
+{
+  "authenticationMethod": "none",
+  "routes": [
+    {
+      "source": "^/odata/.*",
+      "target": "$1",
+      "destination": "capapp404-srv"
+    },
+    {
+      "source": "^/.*",
+      "target": "/index.html",
+      "destination":"capapp404-srv",
+      "authenticationType": "none"
+    }
+  ]
+}
