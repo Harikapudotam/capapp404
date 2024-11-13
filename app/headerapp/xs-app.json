@@ -4,13 +4,19 @@
     {
       "source": "^/odata/.*",
       "target": "$1",
-      "destination": "capapp404-srv"
+      "destination": "srv-api"
     },
     {
       "source": "^/.*",
       "target": "/index.html",
-      "destination":"capapp404-srv",
+      "destination": "srv-api",
       "authenticationType": "none"
+    },
+    {
+      "source": "^/?odata/(.*)$",
+      "target": "/odata/$1",
+      "destination": "srv-api",
+      "csrfProtection": true
     }
   ]
 }

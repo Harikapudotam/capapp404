@@ -16,6 +16,7 @@ entity RequestHeader : managed{
     // @semantics.TotalPrice.currencyCode : 'currency'
     TotalPrice   : Decimal(10,2); // Use Decimal for currency representation
     items        : Composition of many RequestItem on items.RequestHeader = $self; // Composition
+  
 }
 
 entity RequestItem : managed {
